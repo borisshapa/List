@@ -70,7 +70,7 @@ private:
     struct node_base {
         node_base() : next(nullptr), prev(nullptr) {}
 
-        node_base(node_base *prev, node_base *next) : prev(prev), next(next) {}
+        node_base(node_base *prev, node_base *next) : next(next), prev(prev) {}
 
         node_base *next;
         node_base *prev;
